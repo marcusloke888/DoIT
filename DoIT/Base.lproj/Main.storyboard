@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3cI-CL-unx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3cI-CL-unx" customClass="I">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -71,8 +71,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKY-dC-b2P">
-                                <rect key="frame" x="156" y="135" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKY-dC-b2P">
+                                <rect key="frame" x="154" y="135" width="67" height="30"/>
                                 <state key="normal" title="Complete"/>
                                 <connections>
                                     <action selector="completeTapped:" destination="sRI-Sm-q5o" eventType="touchUpInside" id="aYd-eZ-Stv"/>
@@ -83,6 +83,7 @@
                         <constraints>
                             <constraint firstItem="GKY-dC-b2P" firstAttribute="top" secondItem="Dx1-8W-vOE" secondAttribute="bottom" constant="25" id="5sT-5R-R1Q"/>
                             <constraint firstItem="Dx1-8W-vOE" firstAttribute="top" secondItem="dRd-Zg-H0X" secondAttribute="bottom" constant="25" id="BKf-60-k6p"/>
+                            <constraint firstItem="GKY-dC-b2P" firstAttribute="centerX" secondItem="aZM-A5-4fh" secondAttribute="centerX" id="S85-28-Yle"/>
                             <constraint firstItem="Dx1-8W-vOE" firstAttribute="centerX" secondItem="aZM-A5-4fh" secondAttribute="centerX" id="VBW-8e-0HZ"/>
                         </constraints>
                     </view>
